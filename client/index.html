@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realtime Whiteboard (Yjs)</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Realtime Whiteboard</h1>
+      <div class="controls">
+        <label>Brush size
+          <input id="brush" type="range" min="1" max="24" value="4" />
+        </label>
+        <label>Color
+          <input id="color" type="color" value="#2b6cb0" />
+        </label>
+        <button id="clear">Clear</button>
+        <span id="room"></span>
+      </div>
+    </header>
+    <main>
+      <canvas id="board"></canvas>
+      <div id="presence"></div>
+    </main>
+    <!-- main.js imports Yjs and y-websocket directly, no need for preload scripts -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
