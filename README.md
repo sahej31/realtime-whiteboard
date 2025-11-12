@@ -57,7 +57,7 @@ realtime-whiteboard/
     └── styles.css
 ```
 
-## Design Notes (useful for interviews)
+## Design Notes 
 - **CRDT (Yjs Doc)**: We store drawing **strokes** in a `Y.Array('strokes')`. Each stroke is an object `{ id, color, size, points }`.
 - **Transport**: `y-websocket` handles message relay & awareness. We run it alongside an Express app that serves static files.
 - **Presence/Awareness**: Each client shares a username/color and cursor coords; awareness is kept out of the CRDT so it doesn't pollute the doc's persistent state.
