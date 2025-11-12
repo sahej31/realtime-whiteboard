@@ -3,16 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Realtime whiteboard server using y-websocket + express static hosting",
+  "description": "Realtime whiteboard server using Socket.IO",
   "license": "MIT",
   "scripts": {
     "start": "node index.js",
     "dev": "node index.js"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "ws": "^8.18.0",
-    "y-websocket": "^2.0.3",
-    "yjs": "^13.6.18"
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
   }
 }
